@@ -20,6 +20,7 @@ $images = preg_grep("/\.(?:png|gif|jpg)$/i", $images);
     <div>
         <img src="<?php echo "/upload/images/".$image ?>" class="banner" alt="">
         <p><a href="<?php echo "/upload/images/".$image ?>" download><span>Скачать файл</span></a>
+            <p><a href="<?php echo '/delete.php?path='.$image?>"><span>Удалить файл</span></a>
     </div>
     <?php
     }
